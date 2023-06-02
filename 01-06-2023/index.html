@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+var amount =120;
+var environment = "dev";
+
+var sendingAmount;
+switch (environment) {
+  case "dev":
+    sendingAmount = amount + (amount* 0.1); 
+    break;
+  case "test":
+    sendingAmount = amount + (amount * 0.2); 
+    break;
+  case "stage":
+    sendingAmount = amount + (amount * 0.3); 
+    break;
+  case "prod":
+    sendingAmount = amount + (amount * 0.05); 
+    break;
+  default:
+    sendingAmount = amount; 
+}
+
+console.log("Sending amount:", sendingAmount);
+
+    </script>
+</body>
+</html>
