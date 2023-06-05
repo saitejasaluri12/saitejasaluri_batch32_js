@@ -8,24 +8,24 @@
 </head>
 <body>
     <script>
-        let Hobbies=["playing football", "reading books","pubg","watching movies"]
-        function hobbyreturn(){
-            return Hobbies;
+        let hobbies=["TV", "books","pubg","cricket"]
+        function sample(){
+            return hobbies;
         }
-        console.log(hobbyreturn());
+        console.log(sample());
 
-         function addHobby(newElement){
-             Hobbies.push(newElement);
-             return Hobbies;
+         function add(newElement){
+             hobbies.push(newElement);
+             return hobbies;
          }
-         console.log(addHobby("singing"));
+         console.log(add("running"));
 
-         function delHobby(delElement){
-             let index=Hobbies.indexOf(delElement);
-             Hobbies.splice(index, 1);
-             return Hobbies;
+         function del(delElement){
+             let index=hobbies.indexOf(delElement);
+             hobbies.splice(index, 2);
+             return hobbies;
          }
-         console.log(delHobby("watching movies")); 
+         console.log(del("pubg")); 
         
     </script>
 </body>
