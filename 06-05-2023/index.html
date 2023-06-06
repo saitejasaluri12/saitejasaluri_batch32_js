@@ -26,16 +26,16 @@
         function displaybiodata(event){
             event.preventDefault(); 
     
-          var firstname= document.getElementById("firstname").value;
-          var lastname = document.getElementById("lastname").value;
-          var dateofbirth = document.getElementById("dateofbirth").value;
-          var myemail = document.getElementById("myemail").value;
-          var myphone = document.getElementById("myphone").value;
-          var myaddress = document.getElementById("myaddress").value;
+          let firstname= document.getElementById("firstname").value;
+          let lastname = document.getElementById("lastname").value;
+          let dateofbirth = document.getElementById("dateofbirth").value;
+          let myemail = document.getElementById("myemail").value;
+          let myphone = document.getElementById("myphone").value;
+          let myaddress = document.getElementById("myaddress").value;
          
-          var details=document.getElementById("result");
+          let details=document.getElementById("result");
           details.innerHTML="<h1>Details</h1>"+
-                            "<p>First Name: "+firstname+"</p>"+
+                            "<p>First Name: "+firstname+"</p>"+ 
                             "<p>Last Name: "+lastname+"</p>"+
                             "<p>Date of Birth: "+dateofbirth+"</p>"+
                             "<p>Email: "+myemail+"</p>"+
